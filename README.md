@@ -20,7 +20,7 @@ The project concludes with a theoretical comparison between GM and Paillier in t
 - `gems_project.tex`: Main LaTeX file for the report
 - `gems_project.pdf`: Compiled PDF
 - `README.md`: This file
-- Figures or diagrams (if included)
+- Figures or diagrams 
 
 ## 🧠 Key Topics Covered
 
