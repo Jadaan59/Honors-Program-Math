@@ -40,10 +40,6 @@ url = "https://www.gutenberg.org/cache/epub/12/pg12.txt"
 resp = requests.get(url)
 book_raw = resp.text
 
-# Option B (if you prefer local file):
-# with open("pg12.txt", "r", encoding="utf-8") as f:
-#     book_raw = f.read()
-
 book_clean = clean_text(book_raw)
 book_nums = text_to_nums(book_clean)
 print("Book length:", len(book_nums))
@@ -144,7 +140,6 @@ else:
     key_string_pi = "".join(key_pi)
     print("Key (d -> e) as 26-letter string:")
     print(key_string_pi)
-
-    # If you prefer the usual 'a maps to ...' view, this is it:
+    
     print("This means: 0->%s, 1->%s, ..., 25->%s" %
           (key_pi[0], key_pi[1], key_pi[25]))
